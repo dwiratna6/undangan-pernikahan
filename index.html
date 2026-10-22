@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Undangan Pernikahan Adit dan Rani">
+    <title>Undangan Pernikahan | Adit & Rani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="style_wdcard.css">
+</head>
+<body>
+    <!-- halaman pembuka -->
+    <section class="cover" id="cover">
+        <div class="cover-card">
+            <p class="eyebrow">THE WEDDING OF</p>
+            <p class="cover-small">Undangan Pernikahan</p>
+            <h1 class="script-name">Adit <span>&amp;</span> Rani</h1>
+            <div class="cover-line"></div>
+            <p class="cover-date">MINGGU, 25 OKTOBER 2026</p>
+            <p class="guest-label">Kepada Yth.</p>
+            <p class="guest-name" id="guestName">Bapak/Ibu/Saudara/i</p>
+            <button class="primary-button" id="openInvitation">Buka Undangan</button>
+            <p class="cover-note">Merupakan suatu kehormatan bagi kami <br> atas kehadiran Anda.</p>
+        </div>
+        <div class="cover-ornament ornament-left">❧</div>
+        <div class="cover-ornament ornament-right">❧</div>
+    </section>
+
+    <!--konten undangan-->
+    <main id="invitation" class="invitation hidden">
+        <header class="hero section">
+            <p class="eyebrow">SAVE THE DATE</p>
+            <p class="hero-intro">Dengan memohon rahmat dan ridho Tuhan Yang Maha Esa,</p>
+            <p class="hero-intro">kami bermaksud menyelenggarakan pernikahan putra-putri kami:</p>
+
+            <div class="photo-frame">
+                <img src="images/pasangan.jpg" alt="Foto Adit dan Rani"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="photo-placeholder">
+                    <span>ADIT &amp; RANI</span>
+                    <small>Letakkan foto pasangan di folder images</small>
+                </div>
+            </div>
+
+            <div class="couple-names">
+                <article>
+                    <h2 class="script-name">Adit</h2>
+                    <p>Putra dari Bapak Anang dan Ibu Dita</p>
+                </article>
+                <span class="ampersand">&amp;</span>
+                <article>
+                    <h2 class="script-name">Rani</h2>
+                    <p>Putri dari Bapak Rama dan Ibu Nila</p>
+                </article>
+            </div>
+            <div class="date-badge">
+                <span>MINGGU</span>
+                <strong>25</strong>
+                <span>OKTOBER 2026</span>
+            </div>
+        </header>
+
+        <section class="event section">
+            <p class="eyebrow">WAKTU &amp; TEMPAT</p>
+            <h2 class="section-title">Rangkaian Acara</h2>
+            <div class="event-grid">
+                <article class="event-card">
+                    <span class="event-icon">✦</span>
+                    <h3>Akad Nikah</h3>
+                    <p>Minggu, 25 Oktober 2026</p>
+                    <p>08.00 WIB – selesai</p>
+                </article>
+                <article class="event-card"><span class="event-icon">❦</span>
+                    <h3>Resepsi</h3>
+                    <p>Minggu, 25 Oktober 2026</p>
+                    <p>11.00–14.00 WIB</p>
+                </article>
+            </div>
+            <div class="location-card">
+                <h3>Lokasi Acara</h3>
+                <p class="location-name">Nama Gedung / Tempat Acara</p>
+                <a class="primary-button map-button" href="https://maps.app.goo.gl/3bvAjvDJaSeE3ss4A" target="_blank" rel="noopener noreferrer">
+                    Buka Google Maps
+                </a>
+            </div>
+        </section>
+
+        <section class="quote section">
+            <p class="eyebrow">DOA &amp; HARAPAN</p>
+            <p class="quote-text">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram di sampingnya.”</p>
+            <p class="quote-source">QS. Ar-Rum: 21</p>
+            <div class="quote-divider"></div>
+            <p>Merupakan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+            <h2 class="script-name closing">Adit &amp; Rani</h2>
+        </section>
+
+        <footer class="footer">
+            <p>Terima kasih atas doa dan restunya.</p>
+            <p class="footer-names">ADIT &amp; RANI · 2026</p>
+        </footer>
+    </main>
+
+    <!--tombol musik-->
+    <button id="musicToggle" class="music-toggle hidden" aria-label="Putar atau hentikan musik" title="Musik">♫</button>
+    <audio id="weddingMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script_wc.js"></script>
+</body>
+</html>
